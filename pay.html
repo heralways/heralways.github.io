@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pay with PayPal (Sandbox)</title>
+  <script src="https://www.paypal.com/sdk/js?client-id=AVs9ey2blrKOv2Z5DaSmEWibGWAHFtj3JEicpdwAMd3ko25eBPjbo0KGvr5vyuY6aJ6Hco1SaLe0zKBV&currency=USD"></script>
+</head>
+<body>
+
+<h2>Complete Your Payment</h2>
+<div id="paypal-button-container"></div>
+
+<script>
+paypal.Buttons({
+  createOrder: (data, actions) => {
+    return actions.order.create({
+      purchase_units: [{
+        amount: { value: "1.00" }
+      }]
+    });
+  },
+  onApprove: (data, actions) => {
+    return actions.order.capture().then(() => {
+      window.location.href = "thankyou.html";
+    });
+  }
+}).render('#paypal-button-container');
+</script>
+
+</body>
+</html>
