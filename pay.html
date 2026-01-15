@@ -20,7 +20,7 @@ paypal.Buttons({
   },
   onApprove: (data, actions) => {
     return actions.order.capture().then(() => {
-      window.location.href = "thankyou.html";
+      window.location.href = "thank-you.html";
     });
   }
 }).render('#paypal-button-container');
