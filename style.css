@@ -189,3 +189,25 @@ footer {
   margin-bottom: 15px;
 }
 
+/* MOBILE READABILITY FIX — MOBILE ONLY */
+@media (max-width: 480px) {
+
+  /* Increase base text comfort on mobile */
+  body {
+    font-size: 18px;
+  }
+
+  /* Main reading paragraphs */
+  .description,
+  .story p,
+  .occasions p {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  /* Long-form text should not be centered on mobile */
+  .story p {
+    text-align: left;
+  }
+
+}
