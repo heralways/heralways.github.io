@@ -211,3 +211,226 @@ footer {
   }
 
 }
+/* COLLECTION */
+.collection {
+  padding: 60px 20px;
+  background: #f3efe9;
+}
+
+.collection h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+}
+
+.collection p {
+  max-width: 600px;
+  margin: 10px auto 30px;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.collection-item img {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 12px;
+}
+
+.collection-item h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+
+.tag {
+  color: #b8860b;
+  font-size: 14px;
+}
+
+.coming {
+  font-size: 13px;
+  color: #777;
+}
+
+/* MOBILE COLLECTION */
+@media (max-width: 768px) {
+  .collection-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* COLLECTION CARD IMPROVEMENT */
+.collection-item {
+  background: white;
+  padding: 18px;
+  border-radius: 14px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.collection-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.collection-grid a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.collection-link{
+text-decoration:none;
+color:inherit;
+}
+
+.collection-item:hover{
+transform:translateY(-5px);
+transition:0.3s;
+}
+
+.top-bar{
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+margin-bottom:10px;
+}
+
+.back{
+position:absolute;
+right:0;
+color:#d4af37;
+text-decoration:none;
+font-size:14px;
+font-family:'Montserrat', sans-serif;
+}
+
+.back:hover{
+opacity:0.8;
+}
+
+@media (max-width: 768px){
+
+.top-bar{
+flex-direction:column;
+gap:8px;
+}
+
+.back{
+position:static;
+display:block;
+text-align:center;
+margin-top:5px;
+}
+
+}
+
+.product-gallery{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:10px;
+margin-top:15px;
+max-width:500px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.product-gallery img{
+width:100%;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.product-gallery img:hover{
+transform:scale(1.05);
+}
+
+@media (max-width:768px){
+
+.product-gallery{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+.back{
+display:block;
+text-align:center;
+margin-top:8px;
+}
+
+.product-gallery{
+max-width:420px;
+margin:auto;
+}
+
+.product h2{
+margin-top:25px;
+}
+
+.shipping{
+margin-top:15px;
+font-size:14px;
+opacity:0.8;
+}
+
+.why-special{
+margin-top:50px;
+text-align:center;
+max-width:700px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.why-special h3{
+font-family:'Playfair Display', serif;
+margin-bottom:25px;
+font-size:26px;
+}
+
+.benefits{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.benefit{
+background:#ffffff;
+padding:22px;
+border-radius:12px;
+box-shadow:0 6px 25px rgba(0,0,0,0.08);
+}
+
+.perfect-for{
+margin-top:50px;
+margin-bottom:60px;
+text-align:center;
+}
+
+.perfect-for h3{
+font-family:'Playfair Display', serif;
+margin-bottom:20px;
+font-size:26px;
+}
+
+.occasion-list{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:12px;
+max-width:600px;
+margin:auto;
+}
+
+.occasion-list span{
+background:#ffffff;
+padding:10px 16px;
+border-radius:20px;
+box-shadow:0 4px 15px rgba(0,0,0,0.06);
+font-size:14px;
+}
