@@ -473,7 +473,18 @@ color:#d4af37;
 opacity:0.8;
 }
 
-/* Prevent horizontal scroll on mobile */
+/* Mobile overflow fixes */
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 html, body {
   overflow-x: hidden;
+  max-width: 100%;
 }
