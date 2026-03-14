@@ -473,10 +473,13 @@ color:#d4af37;
 opacity:0.8;
 }
 
+/* Mobile overflow fixes */
+
+* {
+  box-sizing: border-box;
+}
+
 /* Prevent horizontal scroll on mobile */
 html, body {
   overflow-x: hidden;
 }
-
-
-
