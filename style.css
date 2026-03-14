@@ -475,9 +475,6 @@ opacity:0.8;
 
 /* Mobile overflow fixes */
 
-* {
-  box-sizing: border-box;
-}
 
 
 html, body {
