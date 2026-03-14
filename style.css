@@ -472,3 +472,8 @@ color:#d4af37;
 .guide-link:hover{
 opacity:0.8;
 }
+
+/* Prevent horizontal scroll on mobile */
+html, body {
+  overflow-x: hidden;
+}
