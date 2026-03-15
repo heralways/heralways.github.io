@@ -455,11 +455,17 @@ margin-bottom:25px;
 
 .guide-card{
 max-width:500px;
-margin:auto;
+margin:0 auto 24px;
 background:#ffffff;
 padding:22px;
 border-radius:14px;
 box-shadow:0 8px 30px rgba(0,0,0,0.08);
+transition:0.25s ease;
+}
+
+.guide-card:hover{
+transform:translateY(-4px);
+box-shadow:0 14px 40px rgba(0,0,0,0.12);
 }
 
 .guide-link{
@@ -492,4 +498,27 @@ margin-bottom:15px;
 h3{
 margin-top:40px;
 margin-bottom:12px;
+}
+
+main a{
+color:#d4af37;
+text-decoration:none;
+font-weight:500;
+transition:opacity 0.2s ease;
+}
+
+main p a:hover{
+opacity:0.8;
+text-decoration:underline;
+}
+
+.collection-grid a:hover{
+opacity:1;
+text-decoration:none;
+}
+
+/* Fix buttons */
+.buy:hover{
+opacity:1;
+text-decoration:none;
 }
