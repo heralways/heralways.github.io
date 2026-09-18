@@ -517,8 +517,97 @@ opacity:1;
 text-decoration:none;
 }
 
-/* Fix buttons */
-.buy:hover{
-opacity:1;
+/* GUIDES HUB PAGE */
+
+.guides-hero-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+max-width:1000px;
+margin:auto;
+text-align:left;
+}
+
+.guide-page-card{
+background:#ffffff;
+padding:24px;
+border-radius:14px;
+box-shadow:0 8px 30px rgba(0,0,0,0.08);
+transition:0.25s ease;
+display:block;
 text-decoration:none;
+color:inherit;
+}
+
+.guide-page-card:hover{
+transform:translateY(-4px);
+box-shadow:0 14px 40px rgba(0,0,0,0.12);
+}
+
+.guide-page-card h3{
+font-family:'Playfair Display', serif;
+font-size:18px;
+margin:0 0 10px;
+color:#2c2c2c;
+}
+
+.guide-page-card p{
+font-size:14px;
+color:#666;
+margin:0;
+line-height:1.5;
+}
+
+.guide-page-card .guide-tag{
+display:inline-block;
+font-size:12px;
+color:#b8860b;
+font-weight:600;
+margin-top:12px;
+}
+
+@media (max-width:900px){
+.guides-hero-grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media (max-width:600px){
+.guides-hero-grid{
+grid-template-columns:1fr;
+}
+}
+
+/* View all guides button on homepage */
+.view-more-wrap{
+text-align:center;
+margin-top:10px;
+}
+
+.view-all-link{
+display:inline-flex;
+align-items:center;
+gap:8px;
+color:#b8860b;
+text-decoration:none;
+font-size:14px;
+font-weight:600;
+letter-spacing:1.5px;
+text-transform:uppercase;
+border-bottom:1px solid transparent;
+padding-bottom:4px;
+transition:0.25s ease;
+}
+
+.view-all-link:hover{
+border-bottom-color:#b8860b;
+opacity:0.85;
+}
+
+.view-all-link .arrow{
+transition:transform 0.25s ease;
+}
+
+.view-all-link:hover .arrow{
+transform:translateX(4px);
 }
