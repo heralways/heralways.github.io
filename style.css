@@ -17,6 +17,16 @@ body {
   margin-bottom: 30px;
 }
 
+.hero a:has(.logo) {
+  display: inline-block;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.hero a:has(.logo):hover {
+  opacity: 0.85;
+}
+
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
