@@ -79,6 +79,15 @@
 }
 </script>
 
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9F1KSRCFZW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9F1KSRCFZW');
+</script>
 </head>
 
 <body>
@@ -208,7 +217,7 @@ If you're looking for a meaningful necklace that represents a deep and lasting b
 </p>
 
 <div style="margin-top:25px;">
-<a href="love-knot-necklace.html" class="buy">Create Your Gift</a>
+<a href="love-knot-necklace.html" class="buy" onclick="gtag('event', 'buy_button_click', {'button_location': 'love_knot_necklace_meaning_guide', 'necklace': 'love_knot'});">Create Your Gift</a>
 </div>
 
 </section>

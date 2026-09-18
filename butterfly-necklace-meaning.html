@@ -94,6 +94,15 @@
 }
 </script>
 
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9F1KSRCFZW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9F1KSRCFZW');
+</script>
 </head>
 
 <body>
@@ -180,7 +189,7 @@ We don't currently carry a butterfly design ourselves, but the meaning it repres
 </p>
 
 <div style="text-align:center;margin-top:30px;">
-<a href="infinity-love-necklace.html" class="buy">Create Your Gift</a>
+<a href="infinity-love-necklace.html" class="buy" onclick="gtag('event', 'buy_button_click', {'button_location': 'butterfly_meaning_guide_in_love_section', 'necklace': 'infinity_love'});">Create Your Gift</a>
 </div>
 
 
@@ -255,7 +264,7 @@ If you're marking a relationship that's grown into something new, the Infinity L
 </p>
 
 <div style="margin-top:25px;">
-<a href="infinity-love-necklace.html" class="buy">Create Your Gift</a>
+<a href="infinity-love-necklace.html" class="buy" onclick="gtag('event', 'buy_button_click', {'button_location': 'butterfly_meaning_guide_bottom_cta', 'necklace': 'infinity_love'});">Create Your Gift</a>
 </div>
 
 </section>
