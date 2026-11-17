@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.heralways.com/sitemap.xml
+Sitemap: https://heralways.com/sitemap.xml
